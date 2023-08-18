@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+    {% block content %}
+    <h1 >Ordering page</h1>
+
+    </ul>
+    <div class="container mb-5">
+        <div class="row justify-content-center mt-1">
+            <div class="col-md-12 col-sm-12 p-4">
+                <form method="POST" action="{% url 'system:receipt' %}" >
+                    {% csrf_token %}
+                    <div class="pt-5">
+                        {% for item in menu_items %}
+                        <div class="row">
+                            <div class="col-md-2 col-sm-12">
+                                <img class="rounded" src="{{ item.image.url }}" width="140" height="100"/>
+                            </div>
+                            <div class="col-md-8 col-sm-12">
+                                <div class="d-flex flex-row">
+                                    <div class="form-group form-check">
+                                        <input type="checkbox" name="items[]" class="form-check-input" value="{{ item.pk }}">
+                                        <label class="form-check-label">{{ item.name }}:Rs</label>
+                                    </div>
+                                    <p class="font-weight-bold ">{{ item.price }}</p>
+                                </div>
+                                <p>{{ item.description }}</p>
+                            </div>
+                        </div>
+                        <hr />
+                        
+                    {% endfor %}
+                    <button class="btn btn-dark mt-5">Place Order!</button>
+                </form>
+                    </div>
+    {% endblock %}
