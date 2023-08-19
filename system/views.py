@@ -4,7 +4,7 @@ from .models import MenuItem,OrderModel
 # Create your views here.
 def homepage(request):
     items = MenuItem.objects.all()
-    return render(request, 'main.html', {'items': items})
+    return render(request, 'main.html', {'items': items},)
 
 def orderpage(request):
     menu_items = MenuItem.objects.all()

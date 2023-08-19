@@ -11,15 +11,31 @@
     </div>
 
     <div class="row justify-content-center mt-5">
-        <div class="col-md-5 col-sm-12 text-center">
+        <div class="col-md-8 col-sm-12 text-center">
             <h3 class="pb-3">Order Summary:</h3>
-            {% for item in items %}
-                <p>{{ item.name }} <span class="pl-3">{{ item.price }}</span></p>
-            {% endfor %}
-          
-            <p class="font-weight-bold pt-4">Total: {{ price }}</p>
+            <table class="table table-bordered table-sm">
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for item in items %}
+                    <tr>
+                        <td>{{ item.name }}</td>
+                        <td>{{ item.price }}</td>
+                    </tr>
+                    {% endfor %}
+                    <tr>
+                        <td class="font-weight-bold">Total:</td>
+                        <td class="font-weight-bold">{{ price }}</td>
+                    </tr>
+                </tbody>
+            </table>
             <button class="btn btn-dark mt-3" onclick="window.print()">Print Receipt</button>
         </div>
     </div>
 </div>
+
 {% endblock content %}
