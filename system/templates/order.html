@@ -1,15 +1,21 @@
 {% extends 'base.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
     {% block content %}
-    
-    <h1 >Ordering page</h1>
-
-    </ul>
     <div class="container mb-5">
         <div class="row justify-content-center mt-1">
             <div class="col-md-12 col-sm-12 p-4">
                 <form method="POST" action="{% url 'system:receipt' %}" >
                     {% csrf_token %}
                     <div class="pt-5">
+                        <label for="customer_name">Customer Name:</label>
+                        <input type="text" id="customer_name" name="customer_name" required>
                         {% for item in menu_items %}
                         <div class="row">
                             <div class="col-md-2 col-sm-12">
@@ -32,4 +38,8 @@
                     <button class="btn btn-dark mt-5">Place Order!</button>
                 </form>
                     </div>
-    {% endblock %}
+                    </div>
+ {% endblock %}
+</body>
+</html>
+    

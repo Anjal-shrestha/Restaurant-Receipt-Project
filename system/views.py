@@ -20,6 +20,7 @@ def receipt_view(request):
     }
 
     items = request.POST.getlist('items[]')
+    customer_name = request.POST.get('customer_name')
 
     for item in items:
         menu_item = MenuItem.objects.get(pk=int(item))
@@ -38,7 +39,7 @@ def receipt_view(request):
 
     context = {
         'items': order_items['items'],
-        'price': price
-
+        'price': price,
+        'customer_name': customer_name
     }
     return render(request, 'receipt.html', context)
