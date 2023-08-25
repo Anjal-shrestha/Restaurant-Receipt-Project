@@ -1,5 +1,5 @@
 # Restaurant-Receipt-Project
-# Restaurant Receipt Project
+
 
 ## Description
 This project is a web application for a restaurant's order and receipt system. Customers can browse the menu, place orders, and receive a printable receipt. The project is built using the Django framework and follows the Model-View-Template architecture.
