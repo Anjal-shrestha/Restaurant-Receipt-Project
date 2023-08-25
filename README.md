@@ -44,7 +44,7 @@ Contributions are welcome! Here's how you can contribute:
 5. Create a pull request from your branch to the main repository
 
 ## License
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the [BIM License](LICENSE).
 
 ## Acknowledgements
 - This project was inspired by the need for an efficient order and receipt system for restaurants.
