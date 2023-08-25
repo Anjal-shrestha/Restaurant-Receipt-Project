@@ -7,6 +7,8 @@ This project is a web application for a restaurant's order and receipt system. C
 ## Screenshots
 
 <!-- Include screenshots or links to wireframes and flowcharts -->
+![Alt Text]([URL](https://whimsical.com/reciept-N4NU8L1P1sS9rBSaJRKVk3@VsSo8s35WwPrm8dt4seA8k))
+
 ![Homepage](screenshots/homepage.png)
 ![Order Page](screenshots/orderpage.png)
 ![Receipt](screenshots/receipt.png)
