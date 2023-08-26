@@ -1,14 +1,26 @@
 # Restaurant-Receipt-Project
-![download](https://github.com/Anjal-shrestha/Restaurant-Receipt-Project/assets/24295752/18b0ec05-d206-4aa6-9e99-a0985b788bc5)
+<div align="center">
+  <img src="https://github.com/Anjal-shrestha/Restaurant-Receipt-Project/assets/24295752/18b0ec05-d206-4aa6-9e99-a0985b788bc5" alt="Logo">
+</div>
+
 
 
 
 ## Description
-This project is a web application for a restaurant's order and receipt system. Customers can browse the menu, place orders, and receive a printable receipt. The project is built using the Django framework and follows the Model-View-Template architecture.
+This project is a web application for a restaurant's order and receipt system. It was developed as a collaborative effort among college friends with a shared passion for programming. Customers can browse the menu, place orders, and receive a printable receipt. The project is built using the Django framework and follows the Model-View-Template architecture.
 
 
 ## Flowchart
-![flow chart project](https://github.com/Anjal-shrestha/Restaurant-Receipt-Project/assets/24295752/6368d2b9-25e0-42f2-8b6d-8d735a81902d)
+<div align="center">
+  <img src="https://github.com/Anjal-shrestha/Restaurant-Receipt-Project/assets/24295752/6368d2b9-25e0-42f2-8b6d-8d735a81902d" alt="Flowchart">
+</div>
+
+## Wireframes
+<p align="center">
+  <img src="https://github.com/Anjal-shrestha/Restaurant-Receipt-Project/assets/24295752/e348eba3-7298-47a1-8a33-61f25dbf75e6" alt="Homepage Wireframe" width="300">
+  <img src="https://github.com/Anjal-shrestha/Restaurant-Receipt-Project/assets/24295752/958d22e3-b7bd-4f77-8063-ed9177493542" alt="Order Page Wireframe" width="300">
+  <img src="https://github.com/Anjal-shrestha/Restaurant-Receipt-Project/assets/24295752/583be6f7-9d0c-488d-9785-928315eef6b5" alt="Receipt Page Wireframe" width="300">
+</p>
 
 ## Screenshots
 
