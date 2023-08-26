@@ -1,4 +1,6 @@
 # Restaurant-Receipt-Project
+![download](https://github.com/Anjal-shrestha/Restaurant-Receipt-Project/assets/24295752/18b0ec05-d206-4aa6-9e99-a0985b788bc5)
+
 
 
 ## Description
