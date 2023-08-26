@@ -60,6 +60,9 @@ Contributions are welcome! Here's how you can contribute:
 This project is licensed under the [BIM License](LICENSE).
 
 ## Acknowledgements
-- This project was inspired by the need for an efficient order and receipt system for restaurants.
-- Special thanks to the [Django documentation](https://docs.djangoproject.com/) and various online resources for guidance and assistance.
 
+This project was inspired by the need for an efficient order and receipt system for restaurants. We would like to express our gratitude to Nagarjuna College of IT for providing us with the opportunity to work on this project as a part of our academic curriculum.
+
+Special thanks to our tutor, Rajad Shakya, for their guidance, support, and valuable insights throughout the development of this project. Additionally, we extend our appreciation to the Django documentation and various online resources that contributed to our learning and assisted us in overcoming challenges.
+
+We also acknowledge our friends and colleagues who provided feedback and encouragement, contributing to the overall success of this project.
