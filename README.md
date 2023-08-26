@@ -5,7 +5,7 @@
 This project is a web application for a restaurant's order and receipt system. Customers can browse the menu, place orders, and receive a printable receipt. The project is built using the Django framework and follows the Model-View-Template architecture.
 
 
-##Flowchart
+## Flowchart
 ![flow chart project](https://github.com/Anjal-shrestha/Restaurant-Receipt-Project/assets/24295752/6368d2b9-25e0-42f2-8b6d-8d735a81902d)
 
 ## Screenshots
