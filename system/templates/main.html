@@ -19,8 +19,8 @@
     body {
       background: linear-gradient(to bottom, #f5f5f5, #e0e0e0);
       font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-      font-size: 14px;
-      color: #000;
+      font-size: 16px;
+      color: black;
       margin: 0;
       padding: 0;
     }
@@ -32,7 +32,7 @@
 
     .swiper-slide {
       text-align: center;
-      font-size: 18px;
+      font-size: 0px;
       background: #fff;
       display: flex;
       justify-content: center;
@@ -73,8 +73,7 @@
             <div class="swiper-slide">
                 <img src="{{ item.image.url }}" alt="{{ item.name }}">
                 <div class="carousel-caption d-none d-md-block">
-                  <h5 c>{{ item.name }}</h5>
-                  <p>{{ item.description }}</p>
+                  
                 </div>
             </div>
             {% endfor %}
@@ -92,31 +91,31 @@
                 prevEl: ".swiper-button-prev",
             },
             autoplay: {
-                delay: 1000, 
+                delay: 3500, 
             },
         });
     </script>
 
 
 <main class="container py-4 text-center p-4 mb-4">
-  <section class="about-section mb-4">
+  <section class="about-section mb-4" style="background-color: bisque;">
     <h2>Welcome to Sip & Script Cafe</h2>
     <p>
       Embark on a delightful journey of flavors, creativity, and camaraderie. Situated in the heart of the city, our cafe offers a harmonious blend of aromas, ambiance, and inspiration that makes every visit memorable.
     </p>
   </section>
 
-  <section class="about-section mb-4">
+  <section class="about-section mb-4" style="background-color: bisque;">
     <h2>Ambiance</h2>
     <p>
       Step into our cafe and immerse yourself in an ambiance that seamlessly marries tranquility with creativity. Every corner tells a story, inviting you to relax, connect, and let your imagination flow...
     </p>
   </section>
 
-  <section class="about-section mb-4">
+  <section class="about-section mb-4" style="background-color: bisque;">
     <h2>Creative Community</h2>
     <p>
-      Sip & Script Cafe is more than a cafe; it's a thriving creative community. Join us for workshops, events, and gatherings that celebrate the art of expression and the joy of companionship...
+      Sip & Script Cafe is more than a cafe,it's a thriving creative community. Join us for workshops, events, and gatherings that celebrate the art of expression and the joy of companionship...
     </p>
   </section>
 </main>

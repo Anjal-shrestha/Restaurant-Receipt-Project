@@ -13,7 +13,7 @@
             <div class="col-md-12 col-sm-12 p-4">
                 <form method="POST" action="{% url 'system:receipt' %}" >
                     {% csrf_token %}
-                    <div class="pt-5">
+                    <div class="pt-5" >
                         <label for="customer_name">Customer Name:</label>
                         <input type="text" id="customer_name" name="customer_name" required>
                         {% for item in menu_items %}
