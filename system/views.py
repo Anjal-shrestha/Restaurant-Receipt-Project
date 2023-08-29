@@ -20,7 +20,7 @@ def receipt_view(request):
     }
 
     items = request.POST.getlist('items[]')
-    customer_name = request.POST.get('Customer_name')
+    customer_name = request.POST.get('customer_name')
 
     for item in items:
         menu_item = MenuItem.objects.get(pk=int(item))
