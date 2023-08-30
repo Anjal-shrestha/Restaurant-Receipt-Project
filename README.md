@@ -23,6 +23,15 @@ This project is a web application for a restaurant's order and receipt system. I
 </p>
 
 ## Screenshots
+ **Homepage**:
+![Screenshot homepage](https://github.com/Anjal-shrestha/Restaurant-Receipt-Project/assets/24295752/118d3245-224c-4c78-ac27-d593160fa5dc)
+**Order Page**:
+![Screenshot orderpag1](https://github.com/Anjal-shrestha/Restaurant-Receipt-Project/assets/24295752/887b165a-e883-4134-8f08-a6984c981165)
+![Screenshot orderpag2](https://github.com/Anjal-shrestha/Restaurant-Receipt-Project/assets/24295752/94a0f790-c722-4233-9a0a-6db1cd557de4)
+**Receipt Page**:
+![Screenshot receipt](https://github.com/Anjal-shrestha/Restaurant-Receipt-Project/assets/24295752/5382786c-2c0f-4e93-abd5-fbb432962b34)
+
+
 
 ## Features
 - **Homepage**: Displays a list of menu items with images and descriptions.
@@ -56,13 +65,11 @@ Contributions are welcome! Here's how you can contribute:
 4. Push to your forked repository: `git push origin feature/your-feature-name`
 5. Create a pull request from your branch to the main repository
 
-## License
-This project is licensed under the [BIM License](LICENSE).
 
 ## Acknowledgements
 
 This project was inspired by the need for an efficient order and receipt system for restaurants. We would like to express our gratitude to Nagarjuna College of IT for providing us with the opportunity to work on this project as a part of our academic curriculum.
 
-Special thanks to our tutor, Rajad Shakya, for their guidance, support, and valuable insights throughout the development of this project. Additionally, we extend our appreciation to the Django documentation and various online resources that contributed to our learning and assisted us in overcoming challenges.
+Special thanks to our tutor, <b> Rajad Shakya </b>, for their guidance, support, and valuable insights throughout the development of this project. Additionally, we extend our appreciation to the Django documentation and various online resources that contributed to our learning and assisted us in overcoming challenges.
 
 We also acknowledge our friends and colleagues who provided feedback and encouragement, contributing to the overall success of this project.
