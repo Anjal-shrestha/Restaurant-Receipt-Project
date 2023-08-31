@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+{% block content %}
 <body>
-    {% block content %}
     <div class="container mb-5">
         <div class="row justify-content-center mt-1">
             <div class="col-md-12 col-sm-12 p-4">
@@ -16,7 +16,7 @@
                     <div class="pt-5" style= "font-style: oblique; background-size: 100%; background-color: antiquewhite;"  >
                         <p style="background-image: url('C:\Users\Asus\Desktop\photo\flex.jpg');"></p>
                         <label for="customer_name">Customer Name: </label>
-                        <input type="text" id="customer_name" name="customer_name" style="margin-bottom: 25px; padding: auto; ">
+                        <input type="text" id="customer_name" name="customer_name" required style="margin-bottom: 25px; padding: auto; ">
                         {% for item in menu_items %}
                         <div class="row">
                             <div class="col-md-2 col-sm-12">
@@ -40,7 +40,7 @@
                 </form>
                     </div>
                     </div>
- {% endblock %}
+
 </body>
 </html>
-    
+{% endblock %}
