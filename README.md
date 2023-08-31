@@ -74,11 +74,11 @@ Contributions are welcome! Here's how you can contribute:
         <p><a href="https://github.com/Anjal-shrestha">Anjal Shrestha (GitHub)</a></p>
     </div>
     <div style="text-align: center; margin: 0 20px; background-color: #f9f9f9; padding: 20px; border-radius: 10px;">
-        <img src="https://github.com/Anjal-shrestha/Restaurant-Receipt-Project/assets/134930608/c1c3c05f-1e8a-4973-b433-0bcbe2c56525" alt="Pranita Rai" style="border-radius: 50%; width: 100px; height: 100px;">
+        <img src="![0-02-03-ce4867598fbb2058f6e36f15e01e516ab03b5f59d751c155d4e9ad555b3e84f9_9f1f6fae9909b27d](https://github.com/Anjal-shrestha/Restaurant-Receipt-Project/assets/134930608/11c00a11-e354-4070-a357-83ca" alt="Pranita Rai" style="border-radius: 50%; width: 100px; height: 100px;">
         <p><a href="https://github.com/ValkyrieCode">Pranita Rai (GitHub)</a></p>
     </div>
     <div style="text-align: center; margin: 0 20px; background-color: #f9f9f9; padding: 20px; border-radius: 10px;">
-        <img src="https://scontent.fktm16-1.fna.fbcdn.net/v/t1.6435-9/49081677_2275952212683571_4243380289188921344_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=174925&_nc_ohc=6Y8pUulTK3YAX8j3O3i&_nc_ht=scontent.fktm16-1.fna&oh=00_AfA1BE1zJby4fqtpWl3m6tXpCeQVoMVwJBjjTg9e_FrxZw&oe=65162F2D"  alt="Manish Maharjan" style="border-radius: 50%; width: 100px; height: 100px;">
+        <img src="https://github.com/Anjal-shrestha/Restaurant-Receipt-Project/assets/134930608/4302b31a-c275-48a9-8abe-0a35bbadc210"  alt="Manish Maharjan" style="border-radius: 50%; width: 100px; height: 100px;">
         <p><a href="https://github.com/Carlosbaniya">Manish Maharjan (GitHub)</a></p>
     </div>
     <div style="text-align: center; margin: 0 20px; background-color: #f9f9f9; padding: 20px; border-radius: 10px;">
