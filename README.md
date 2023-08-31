@@ -73,7 +73,7 @@ Contributions are welcome! Here's how you can contribute:
         <p><a href="https://github.com/Anjal-shrestha">Anjal Shrestha (GitHub)</a></p>
     </div>
     <div style="text-align: center; margin: 0 20px; background-color: #f9f9f9; padding: 20px; border-radius: 10px;">
-        <img src="https://scontent.fktm16-1.fna.fbcdn.net/v/t45.1600-4/368442427_6406427798471_4067304153097846098_n.jpg?stp=c0.158.526.526a_cp0_dst-jpg_p526x296_q75_spS444&_nc_cat=108&ccb=1-7&_nc_sid=67cdda&_nc_ohc=_Hn4r5yKOMgAX8YV7xU&_nc_ht=scontent.fktm16-1.fna&oh=00_AfBqtquPsc-mw1xnMZrewLVDLph7uL5WFRgunvr3mhug9w&oe=64F4757B" alt="Pranita Rai" style="border-radius: 50%; width: 100px; height: 100px;">
+        <img src="C:\Users\Raipr\Desktop\Pranita.jpg" alt="Pranita Rai" style="border-radius: 50%; width: 100px; height: 100px;">
         <p><a href="https://github.com/ValkyrieCode">Pranita Rai (GitHub)</a></p>
     </div>
     <div style="text-align: center; margin: 0 20px; background-color: #f9f9f9; padding: 20px; border-radius: 10px;">
