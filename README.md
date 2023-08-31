@@ -67,17 +67,18 @@ Contributions are welcome! Here's how you can contribute:
 5. Create a pull request from your branch to the main repository
 ## Team Members
 
+
 <div style="display: flex; align-items: center; justify-content: center;">
     <div style="text-align: center; margin: 0 20px; background-color: #f9f9f9; padding: 20px; border-radius: 10px;">
         <img src="https://scontent.fktm16-1.fna.fbcdn.net/v/t39.30808-6/276091571_1563789753995703_8729263376625454652_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=gGuUzAfqYugAX-MiDRY&_nc_ht=scontent.fktm16-1.fna&oh=00_AfDy22EMn8wUYVy7RVW81HnqglMimSQeVeKRoX3uMIdG2w&oe=64F2EFF8" alt="Anjal Shrestha" style="border-radius: 50%; width: 100px; height: 100px;">
         <p><a href="https://github.com/Anjal-shrestha">Anjal Shrestha (GitHub)</a></p>
     </div>
     <div style="text-align: center; margin: 0 20px; background-color: #f9f9f9; padding: 20px; border-radius: 10px;">
-        <img src="https://scontent.fktm16-1.fna.fbcdn.net/v/t45.1600-4/368442427_6406427798471_4067304153097846098_n.jpg?stp=c0.158.526.526a_cp0_dst-jpg_p526x296_q75_spS444&_nc_cat=108&ccb=1-7&_nc_sid=67cdda&_nc_ohc=_Hn4r5yKOMgAX8YV7xU&_nc_ht=scontent.fktm16-1.fna&oh=00_AfBqtquPsc-mw1xnMZrewLVDLph7uL5WFRgunvr3mhug9w&oe=64F4757B" alt="Pranita Rai" style="border-radius: 50%; width: 100px; height: 100px;">
+        <img src="https://github.com/Anjal-shrestha/Restaurant-Receipt-Project/assets/134930608/b868591e-080d-4103-8954-d0aa26f7bd11" alt="Pranita Rai" style="border-radius: 50%; width: 100px; height: 100px;">
         <p><a href="https://github.com/ValkyrieCode">Pranita Rai (GitHub)</a></p>
     </div>
     <div style="text-align: center; margin: 0 20px; background-color: #f9f9f9; padding: 20px; border-radius: 10px;">
-        <img src="https://scontent.fktm16-1.fna.fbcdn.net/v/t1.6435-9/49081677_2275952212683571_4243380289188921344_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=174925&_nc_ohc=6Y8pUulTK3YAX8j3O3i&_nc_ht=scontent.fktm16-1.fna&oh=00_AfA1BE1zJby4fqtpWl3m6tXpCeQVoMVwJBjjTg9e_FrxZw&oe=65162F2D"  alt="Manish Maharjan" style="border-radius: 50%; width: 100px; height: 100px;">
+        <img src="https://github.com/Anjal-shrestha/Restaurant-Receipt-Project/assets/134930608/4302b31a-c275-48a9-8abe-0a35bbadc210"  alt="Manish Maharjan" style="border-radius: 50%; width: 100px; height: 100px;">
         <p><a href="https://github.com/Carlosbaniya">Manish Maharjan (GitHub)</a></p>
     </div>
     <div style="text-align: center; margin: 0 20px; background-color: #f9f9f9; padding: 20px; border-radius: 10px;">
