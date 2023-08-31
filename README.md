@@ -74,7 +74,7 @@ Contributions are welcome! Here's how you can contribute:
         <p><a href="https://github.com/Anjal-shrestha">Anjal Shrestha (GitHub)</a></p>
     </div>
     <div style="text-align: center; margin: 0 20px; background-color: #f9f9f9; padding: 20px; border-radius: 10px;">
-        <img src="![0-02-03-ce4867598fbb2058f6e36f15e01e516ab03b5f59d751c155d4e9ad555b3e84f9_9f1f6fae9909b27d](https://github.com/Anjal-shrestha/Restaurant-Receipt-Project/assets/134930608/11c00a11-e354-4070-a357-83ca" alt="Pranita Rai" style="border-radius: 50%; width: 100px; height: 100px;">
+        <img src="https://github.com/Anjal-shrestha/Restaurant-Receipt-Project/assets/134930608/b868591e-080d-4103-8954-d0aa26f7bd11" alt="Pranita Rai" style="border-radius: 50%; width: 100px; height: 100px;">
         <p><a href="https://github.com/ValkyrieCode">Pranita Rai (GitHub)</a></p>
     </div>
     <div style="text-align: center; margin: 0 20px; background-color: #f9f9f9; padding: 20px; border-radius: 10px;">
