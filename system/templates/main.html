@@ -1,129 +1,112 @@
 {% extends 'base.html' %}
-
+{%load static %}
+{% block title %}
+<title>Sip & Script Cafe</title>
+{% endblock %}
+{% block style %}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+{% endblock %}
 {% block content %}
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="utf-8" />
-  <title>Sip & Script Cafe</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-  <style>
-    html,
-    body {
-      position: relative;
-      height: 100%;
-      background-image: url('C:\Users\Asus\Desktop\python project\Restaurant-Receipt-Project\photo\flex.jpg');
-    }
-
-    body {
-      background: linear-gradient(to bottom, #f5f5f5, #e0e0e0);
-      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-      font-size: 16px;
-      color: black;
-      margin: 0;
-      padding: 0; 
-    }
-
-    .swiper {
-      width: 100%;
-      height: 50%;
-    }
-
-    .swiper-slide {
-      text-align: center;
-      font-size: 0px;
-      background: lemonchiffon;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .swiper-slide img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-    }
-
-    .about-section {
-      background-color: beige;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-    }
-
-    .about-section h2 {
-      color: #333;
-    }
-
-    
-  </style>
-</head>
-
-<body>
-</style>
-</head>
-
-<body>
-    <!-- Swiper -->
-    <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-            {% for item in items %}
-            <div class="swiper-slide">
-                <img src="{{ item.image.url }}" alt="{{ item.name }}">
-                <div class="carousel-caption d-none d-md-block">
-                  
-                </div>
-            </div>
-            {% endfor %}
-        </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
+<!-- Swiper -->
+<div class="swiper mySwiper">
+  <div class="swiper-wrapper">
+    {% for i in "123456789" %}
+    <div class="swiper-slide">
+      <img src="{% static 'sliders/' %}{{ i }}.png" alt="Image {{i}}">
+      <div class="carousel-caption d-none d-md-block">
+      </div>
     </div>
+    {% endfor %}
 
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script style="background-color: lavenderblush;">
-        var swiper = new Swiper(".mySwiper", {
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-            autoplay: {
-                delay: 3500, 
-            },
-        });
-    </script>
+  </div>
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+</div>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script style="background-color: lavenderblush;">
+  var swiper = new Swiper(".mySwiper", {
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    autoplay: {
+      delay: 3500,
+    },
+  });
+</script>
 
 
-<main class="container py-4 text-center p-4 mb-4" >
-  <section class="about-section mb-4" style="background-color: bisque;">
+<main class="about-section__wrapper">
+  <section class="about-section__welcome">
     <h2>Welcome to Sip & Script Cafe</h2>
-    <p>
-      Embark on a delightful journey of flavors, creativity, and camaraderie. Situated in the heart of the city, our cafe offers a harmonious blend of aromas, ambiance, and inspiration that makes every visit memorable.
+    <p class="font__21">
+      Embark on a delightful journey of flavors, creativity, and camaraderie. Situated in the heart of the city, our
+      cafe offers a harmonious blend of aromas, ambiance, and inspiration that makes every visit memorable.
     </p>
   </section>
-
-  <section class="about-section mb-4" style="background-color: bisque;">
+  <section class="about-section__one">
     <h2>Ambiance</h2>
-    <p>
-      Step into our cafe and immerse yourself in an ambiance that seamlessly marries tranquility with creativity. Every corner tells a story, inviting you to relax, connect, and let your imagination flow...
+    <p class="font__21">
+      Step into our cafe and immerse yourself in an ambiance that seamlessly marries tranquility with creativity. Every
+      corner tells a story, inviting you to relax, connect, and let your imagination flow...
     </p>
   </section>
-
-  <section class="about-section mb-4" style="background-color: bisque;">
+  <section class="about-section__two">
     <h2>Creative Community</h2>
-    <p>
-      Sip & Script Cafe is more than a cafe,it's a thriving creative community. Join us for workshops, events, and gatherings that celebrate the art of expression and the joy of companionship...
+    <p class="font__21">
+      Sip & Script Cafe is more than a cafe,it's a thriving creative community. Join us for workshops, events, and
+      gatherings that celebrate the art of expression and the joy of companionship...
     </p>
   </section>
 </main>
+<section class="about__first">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 m-auto col-md-9 mb-4 mb-md-0 py-5">
+        <h2 class="text-uppercase text-center"><b>About Sip & Script</b></h2>
+        <p class="font__21 mt-4">Welcome to Sip and Script – Where Culinary Art Meets Creative Expression!
+          At Sip and Script, we believe that dining is more than just a necessity; it's an experience to be savored,
+          shared, and celebrated. Nestled at the intersection of exquisite flavors and artistic inspiration, our
+          restaurant offers a unique haven for food enthusiasts and creatives alike.
+          Join us at Sip and Script, where every visit is a feast for your senses and a celebration of the artistic
+          spirit. We look forward to welcoming you to our table and sharing in the joy of good food and great company.
+          Cheers to creativity and culinary delight!
+          The Sip and Script Team
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
 
+<section class="about__second">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 text-center my-5">
+        <h2 class="text-uppercase">Contact Us</h2>
+        <p class="font__21 "><i class="fa fa-envelope mx-1"></i>Email: info@sipandscript.com</p>
+        <p class="font__21 "><i class="fa fa-phone mx-1"></i>Phone: +977 (07) 456-7890</p>
+      </div>
 
+      <div class="col-lg-6">
+        <div class="social text-center my-5">
+          <h2 class="text-uppercase">Follow Us</h2>
+          <a class="btn btn-floating m-1" href="https://www.facebook.com/" target="_blank" role="button">
+            <i class="fab fa-facebook-f"
+              style="background-color: darkblue;color: white;border:none;padding: 10px 20px;"></i>
+          </a>
+          <a class="btn  btn-floating m-1" href="https://www.twitter.com/" target="_blank" role="button">
+            <i class="fab fa-twitter" style="background-color: aqua;color: white;border:none;padding: 10px 20px;"></i>
+          </a>
+          <a class="btn btn-floating m-1" href="https://instagram.com/" target="_blank" role="button">
+            <i class="fab fa-instagram"
+              style="background-color: chocolate;color: white;border:none;padding: 10px 20px;"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-</body>
-
-</html>
 {% endblock %}

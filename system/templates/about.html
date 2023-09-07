@@ -1,4 +1,72 @@
 {% extends 'base.html' %}
+{% block title %}
+<title>About | Sip & Script Cafe</title>
+{% endblock %}
+{% block style %}
+<style>
+    .navbar{
+    border:none;
+    z-index: 20;
+    background: transparent;
+    width: 100%;
+}
+</style>
+{% endblock %}
     {% block content %}
-    <h1>About page</h1>
+    <div class="about-page__wrapper ">
+        <div class="row w-100 m-auto">
+            <div class="col-lg-5 col-md-6 p-0">
+                <img src="https://images.unsplash.com/photo-1482350325005-eda5e677279b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" width="100%" />
+                <div class="social text-center">
+                    <h2 class="text-uppercase">Follow Us</h2>
+                    <a class="btn btn-floating m-1" href="https://www.facebook.com/" target="_blank" role="button">
+                      <i class="fab fa-facebook-f"
+                        style="background-color: darkblue;color: white;border:none;padding: 10px 20px;"></i>
+                    </a>
+                    <a class="btn  btn-floating m-1" href="https://www.twitter.com/" target="_blank" role="button">
+                      <i class="fab fa-twitter" style="background-color: aqua;color: white;border:none;padding: 10px 20px;"></i>
+                    </a>
+                    <a class="btn btn-floating m-1" href="https://instagram.com/" target="_blank" role="button">
+                      <i class="fab fa-instagram"
+                        style="background-color: chocolate;color: white;border:none;padding: 10px 20px;"></i>
+                    </a>
+                  </div>
+            </div>
+            <div class="col-lg-7 col-md-6 p-0">
+                <div class="desc">
+                    <h1 class="text-uppercase my-5"><b>About Sip & Script</b></h1>
+                    <p>Welcome to Sip and Script – Where Culinary Art Meets Creative Expression!
+                      At Sip and Script, we believe that dining is more than just a necessity; it's an experience to be savored, shared, and celebrated. Nestled at the intersection of exquisite flavors and artistic inspiration, our restaurant offers a unique haven for food enthusiasts and creatives alike.
+                    </p>
+                    <marquee direction="down" height="40px" scrollamount="2" onmouseover="this.stop();" onmouseout="this.start();">
+                       <ul>
+                           <li>Join us at Sip and Script</li>
+                           <li>Join us at Sip and Script</li>
+                           <li>Join us at Sip and Script</li>
+                           <li>Join us at Sip and Script</li>
+                       </ul>
+                    </marquee>
+                    <p>Join us at Sip and Script, where every visit is a feast for your senses and a celebration of the artistic spirit. We look forward to welcoming you to our table and sharing in the joy of good food and great company.
+                      Cheers to creativity and culinary delight!
+                      The Sip and Script Team 
+                    </p>
+                    <div class="text-center">
+                        <h2 class="text-uppercase">Contact Us</h2>
+                        <div class="d-flex justify-content-center gap-3 flex-wrap">
+                            <p class="font__21"><i class="fa fa-envelope mx-1"></i>Email: info@sipandscript.com</p>
+                            <p class="font__21"><i class="fa fa-phone mx-1"></i>Phone: +977 (07) 456-7890</p>
+                        </div>
+                      </div>
+                      <div class="text-center my-3">
+                        <h3>Signup to our newsletter</h3>
+                        <div class="w-50 m-auto gap-3 d-flex">
+                            <input class="form-control" />
+                            <input type="submit" class="btn btn-sm btn-secondary" value="SIGNUp">
+                        </div>
+                      </div>
+                </div>
+
+            </div>
+        </div>
+      </div>
     {% endblock %}  
