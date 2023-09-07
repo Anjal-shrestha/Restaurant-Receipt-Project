@@ -1,0 +1,60 @@
+{% extends 'base.html' %} {% block content %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+    </style>
+    <div class="container mb-5 pb-1">
+      <div class="row justify-content-center mt-1">
+        <div class="col-md-5 col-sm-12 p-4 text-center">
+          <h1>Order Submitted!</h1>
+          <p>
+        Bon appétit <b>{{ customer_name }}!</b> 
+          </p>
+          <a href="{% url 'system:home' %}">Go to the homepage</a>
+        </div>
+      </div>
+     + 
+
+      <div class="row justify-content-center mt-5">
+        <div class="col-md-8 col-sm-12 text-center">
+          <h3 class="pb-3">Order Summary:</h3>
+          <table class="table table-bordered table-sm">
+            <thead>
+              <tr>
+                <th>Item</th>
+                <th>Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for item in items %}
+              <tr>
+                <td>{{ item.name }}</td>
+                <td>{{ item.price }}</td>
+              </tr>
+              {% endfor %}
+              <tr>
+                <td class="font-weight-bold">Total:</td>
+                <td class="font-weight-bold">{{ price }}</td>
+              </tr>
+            </tbody>
+          </table>
+          <button class="btn btn-dark mt-3" onclick="window.print()">
+            Print Receipt
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+{% endblock %}
