@@ -25,12 +25,16 @@ This project is a web application for a restaurant's order and receipt system. I
 
 ## Screenshots
  **Homepage**:
-![Screenshot homepage](https://github.com/Anjal-shrestha/Restaurant-Receipt-Project/assets/24295752/118d3245-224c-4c78-ac27-d593160fa5dc)
+![image](https://github.com/Anjal-shrestha/Restaurant-Receipt-Project/assets/24295752/6bee542d-6771-4faf-ab16-6dd2cb4500bc) ![image](https://github.com/Anjal-shrestha/Restaurant-Receipt-Project/assets/24295752/43c7ce1b-b59a-4b52-97a8-88eb294b37b7) ![image](https://github.com/Anjal-shrestha/Restaurant-Receipt-Project/assets/24295752/87c34dd2-4348-4509-8ca3-16a5606230cf)
+
+
+
 **Order Page**:
-![Screenshot orderpag1](https://github.com/Anjal-shrestha/Restaurant-Receipt-Project/assets/24295752/887b165a-e883-4134-8f08-a6984c981165)
-![Screenshot orderpag2](https://github.com/Anjal-shrestha/Restaurant-Receipt-Project/assets/24295752/94a0f790-c722-4233-9a0a-6db1cd557de4)
+![image](https://github.com/Anjal-shrestha/Restaurant-Receipt-Project/assets/24295752/c8136892-87f8-46b5-9f4c-ebdfb9b63dd7)
+
 **Receipt Page**:
-![Screenshot receipt](https://github.com/Anjal-shrestha/Restaurant-Receipt-Project/assets/24295752/5382786c-2c0f-4e93-abd5-fbb432962b34)
+![image](https://github.com/Anjal-shrestha/Restaurant-Receipt-Project/assets/24295752/a3f7d0b5-2075-4946-8daa-1ccdfa5cf8b0)
+
 
 
 
