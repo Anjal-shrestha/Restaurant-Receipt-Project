@@ -1,44 +1,129 @@
 {% extends 'base.html' %}
 {% block content %}
 
-    <div class="container-fluid mb-5">
-        <form method="POST" action="{% url 'system:receipt' %}" >
-            {% csrf_token %}
-                    <div class="row justify-content-center mt-1">
-                        <div class="col-md-6 col-sm-12 p-4">
-                        
-                        <label for="customer_name">Customer Name: </label>
-                        <input type="text" id="customer_name" name="customer_name" required style="margin-bottom: 25px; padding: auto; ">
-                        </div>
-                        <div class="col-md-6 col-sm-12 p-4">
+<div class="container-fluid mb-5">
+    <form method="POST" action="{% url 'system:receipt' %}">
+        {% csrf_token %}
+        <div class="row justify-content-center mt-1">
+            <div class="col-md-6 col-sm-12 p-4">
+                <label for="customer_name">Customer Name: </label>
+                <input type="text" id="customer_name" name="customer_name" required
+                    style="margin-bottom: 25px; padding: auto; ">
+                <table class="table-responsive table d-none" border="1" id="bill_table">
+                    <thead>
+                        <tr>
+                            <th>SN</th>
+                            <th>Particular</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th class="amnt">Amount</th>
 
-                        {% for item in menu_items %}
-                        <script>
-                            console.log("{{item}}")
-                        </script>
-                        <div class="row">
-                            <div class="col-md-2 col-sm-12">
-                                <img class="rounded" src="{{ item.image.url }}" width="140" height="100"/>
-                            </div>
-                            <div class="col-md-8 col-sm-12">
-                                <div class="d-flex flex-row">
-                                    <div class="form-group form-check">
-                                        <input type="checkbox" name="items[]" class="form-check-input" value="{{ item.pk }}">
-                                        <label class="form-check-label">{{ item.name }}: Rs </label>
+                        </tr>
+                    </thead>
+                    <tbody id="bill">
+
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td colspan="1">Total</td>
+                            <td id="total"></td>
+                        </tr>
+
+                    </tfoot>
+                </table>
+                <button class="btn btn-dark mt-5 d-none" id="order_btn">Place Order!</button>
+
+            </div>
+            <div class="col-md-6 col-sm-12 p-4">
+                {% for item in menu_items %}
+                <div class="row menu_items">
+                    <label class="d-flex" for="item-{{item.pk}}" title="Click to add item to the order">
+                        <div class="col-md-3 col-sm-6">
+                            <img class="rounded" src="{{ item.image.url }}" />
+                        </div>
+                        <div class="col-md-9 col-sm-6">
+                            <div class="d-flex checkbox__wrapper">
+                                <div class="form-group form-check mx-2 w-100">
+                                    <input type="checkbox" name="items[]" id="item-{{item.pk}}"
+                                        class="form-check-input checkbox d-none" value="{{ item.pk }}"
+                                        data-name="{{ item.name }}" data-price="{{ item.price }}" data-id="{{item.pk}}">
+                                    <div class="details p-1">
+                                        <span class="name">{{ item.name }}</span>
+                                        <span class="font-weight-bold price">Rs {{ item.price }}</span>
                                     </div>
-                                    <p class="font-weight-bold ">{{ item.price }}</p>
+                                    <p class="desc">{{ item.description }}</p>
                                 </div>
-                                <p>{{ item.description }}</p>
+
                             </div>
                         </div>
-                        <hr />
-                        
-                    {% endfor %}
-                    <button class="btn btn-dark mt-5">Place Order!</button>
+                    </label>
                 </div>
-                </div>
-                </form>
+                <hr />
+
+                {% endfor %}
             </div>
-            </div>
-            
+        </div>
+    </form>
+</div>
+</div>
+
+<script>
+    // Get references to all checkboxes with the 'checkbox' class
+    const checkboxes = document.querySelectorAll('.checkbox');
+
+    // Function to handle checkbox click
+    function handleCheckboxClick(event) {
+        // Toggle the 'marked' class on the clicked checkbox
+        event.target.parentNode.classList.toggle('marked');
+        const checkboxes = document.querySelectorAll('.marked');
+        if (checkboxes.length > 0) {
+            document.getElementById("bill_table").classList.remove("d-none")
+            document.querySelector("#order_btn").classList.remove("d-none")
+        }
+        if (checkboxes.length === 0) {
+            document.getElementById("bill_table").classList.add("d-none")
+            document.querySelector("#order_btn").classList.add("d-none")
+        }
+        let resultHTML = "";
+        checkboxes.forEach(checkbox => {
+            const id = checkbox.childNodes[1].getAttribute('data-id');
+            const name = checkbox.childNodes[1].getAttribute('data-name');
+            const price = checkbox.childNodes[1].getAttribute('data-price');
+            resultHTML += `<tr class="items_in_bill"><td>${id}</td> <td>${name}</td><td>${price}</td><td class="col-3"><input type="number" min="1" class="form-control amount" onchange="changeAmnt(event)" value="1" name="quantity-${id}" /><td class="p_amnt">${price}</td>
+                <td><label class="d-flex" for="item-${id}" title="Click to remove item from the order">X</label></td>
+                </tr>`;
+        });
+        document.getElementById("bill").innerHTML = resultHTML;
+        let Total = 0;
+        const p_amnt = document.querySelectorAll(".p_amnt");
+            p_amnt.forEach(amnt => Total += parseFloat(amnt.innerHTML))
+            document.getElementById("total").innerHTML = Total;
+    }
+
+    // Add a click event listener to each checkbox
+    checkboxes.forEach(checkbox => {
+        checkbox.addEventListener('click', handleCheckboxClick);
+
+    });
+
+    function changeAmnt(event) {
+        let Total = 0;
+        // console.log(parseFloat(event.target.value));
+        // console.log(parseFloat(event.target.parentNode.nextSibling.innerHTML));
+        if(event.target.value>0){
+            event.target.parentNode.nextSibling.innerHTML = event.target.parentNode.previousSibling.innerHTML * event.target.value;
+            const p_amnt = document.querySelectorAll(".p_amnt");
+            p_amnt.forEach(amnt => Total += parseFloat(amnt.innerHTML))
+            document.getElementById("total").innerHTML = Total;
+        }
+
+    }
+
+
+
+
+</script>
+
 {% endblock %}

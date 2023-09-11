@@ -21,17 +21,19 @@ def receipt_view(request):
 
     items = request.POST.getlist('items[]')
     customer_name = request.POST.get('customer_name')
-
+ 
     for item in items:
         menu_item = MenuItem.objects.get(pk=int(item))
         item_data = {
             'id': menu_item.pk,
             'name': menu_item.name,
-            'price': menu_item.price
+            'price': menu_item.price,
+            'quantity':request.POST.get('quantity-'+str(int(item))),
+            'amount': int(menu_item.price) * int(request.POST.get('quantity-'+str(int(item))))
         }
         order_items['items'].append(item_data)
 
-    price = sum(item['price'] for item in order_items['items'])
+    price = sum(item['amount'] for item in order_items['items'])
     item_ids = [item['id'] for item in order_items['items']]
 
     order = OrderModel.objects.create(price=price)
@@ -42,4 +44,5 @@ def receipt_view(request):
         'price': price,
         'customer_name': customer_name
     }
+    print("DEBUG:",context)
     return render(request, 'receipt.html', context)

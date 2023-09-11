@@ -1,60 +1,138 @@
-{% extends 'base.html' %} {% block content %}
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-    </style>
-    <div class="container mb-5 pb-1">
-      <div class="row justify-content-center mt-1">
-        <div class="col-md-5 col-sm-12 p-4 text-center">
-          <h1>Order Submitted!</h1>
-          <p>
-        Bon appétit <b>{{ customer_name }}!</b> 
-          </p>
-          <a href="{% url 'system:home' %}">Go to the homepage</a>
-        </div>
-      </div>
-     + 
+{% extends 'base.html' %}
+{% block title %}
+<title>Receipt | Sip & Script Cafe</title>
+{% endblock %}
+{% block style %}
+  <style>
+    body{
+      margin-top: 10px;
+    background-color: #eee;
+    height: 95vh;
+  }
+  .navbar{
+    display: none;
+  }
+  footer{
+    display: none;
+  }
+.card {
+    box-shadow: 0 20px 27px 0 rgb(0 0 0 / 5%);
+}
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 0 solid rgba(0,0,0,.125);
+    border-radius: 1rem;
+    height: 95vh;
+}
+  </style>
+{% endblock %}
 
-      <div class="row justify-content-center mt-5">
-        <div class="col-md-8 col-sm-12 text-center">
-          <h3 class="pb-3">Order Summary:</h3>
-          <table class="table table-bordered table-sm">
-            <thead>
-              <tr>
-                <th>Item</th>
-                <th>Price</th>
-              </tr>
-            </thead>
-            <tbody>
-              {% for item in items %}
-              <tr>
-                <td>{{ item.name }}</td>
-                <td>{{ item.price }}</td>
-              </tr>
-              {% endfor %}
-              <tr>
-                <td class="font-weight-bold">Total:</td>
-                <td class="font-weight-bold">{{ price }}</td>
-              </tr>
-            </tbody>
-          </table>
-          <button class="btn btn-dark mt-3" onclick="window.print()">
-            Print Receipt
-          </button>
-        </div>
-      </div>
+{%block content %}
+<div class="container">
+<div class="row">
+        <div class="col-lg-12">
+            <div class="card">
+                <div class="card-body">
+                    <div class="invoice-title">
+                        <h4 class="float-end font-size-15">Invoice {% now "jSYHi" %} 
+                          <!-- <span class="badge bg-success font-size-12 ms-2">Paid</span> -->
+                        </h4>
+                        <div class="mb-4">
+                           <h2 class="mb-1 text-muted">Sip&Script</h2>
+                        </div>
+                        <div class="text-muted">
+                            <p class="mb-1">Kathmandu</p>
+                            <p class="mb-1"><i class="uil uil-envelope-alt me-1"></i> xyz@gmail.com</p>
+                            <p><i class="uil uil-phone me-1"></i> 012-345-6789</p>
+                        </div>
+                    </div>
+
+                    <hr class="">
+
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="text-muted">
+                                <h5 class="font-size-16 mb-3">Billed To:</h5>
+                                <h5 class="font-size-15 mb-2">{{customer_name}}</h5>
+                            </div>
+                        </div>
+                        <!-- end col -->
+                        <div class="col-sm-6">
+                            <div class="text-muted text-sm-end d-flex justify-content-between">
+                                <div>
+                                    <h5 class="font-size-15 mb-1">Invoice No:</h5>
+                                    <p>#DZ0112</p>
+                                </div>
+                                <div class="">
+                                    <h5 class="font-size-15 mb-1">Invoice Date:</h5>
+                                    <p>{% now "jS F Y H:i" %}</p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <!-- end col -->
+                    </div>
+                    <!-- end row -->
+                    
+                    <div class="py-2">
+                        <h5 class="font-size-15">Order Summary</h5>
+
+                        <div class="table-responsive">
+                            <table class="table align-middle table-nowrap table-centered mb-0">
+                                <thead>
+                                    <tr>
+                                        <th style="width: 70px;">No.</th>
+                                        <th>Item</th>
+                                        <th>Price</th>
+                                        <th>Quantity</th>
+                                        <th class="text-end" style="width: 120px;">Total</th>
+                                    </tr>
+                                </thead><!-- end thead -->
+                                <tbody>
+                                  {% for item in items %}
+                                  <tr>
+                                    <td>{{ forloop.counter }}</td>
+                                    <td>{{ item.name }}</td>
+                                    <td>NPR {{ item.price }}</td>
+                                    <td>{{ item.quantity }}</td>
+                                    <td>NPR {{ item.amount }}</td>
+                                  </tr>
+                                  {% endfor %}
+                                    <!-- end tr -->
+                                    
+                                    <!-- end tr -->
+                                    
+                                    <!-- end tr -->
+                                    <!-- <tr>
+                                        <th scope="row" colspan="4" class="border-0 text-end">
+                                            Tax</th>
+                                        <td class="border-0 text-end">$12.00</td>
+                                    </tr> -->
+                                    <!-- end tr -->
+                                    <tr>
+                                        <th scope="row" colspan="4" class="border-0 text-end">Total</th>
+                                        <td class="border-0 text-end"><h4 class="m-0 fw-semibold">NPR. {{price}}</h4></td>
+                                    </tr>
+                                    <!-- end tr -->
+                                </tbody><!-- end tbody -->
+                            </table><!-- end table -->
+                        </div><!-- end table responsive -->
+                        <div class="d-print-none mt-4">
+                            <div class="float-end">
+                                <a href="javascript:window.print()" class="btn btn-success me-1"><i class="fa fa-print"></i></a>
+                                <a href="/" class="btn btn-primary w-md">HOMEPAGE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- end col -->
     </div>
-  </body>
-</html>
+</div>
 {% endblock %}
