@@ -40,6 +40,11 @@ This project is a web application for a restaurant's order and receipt system. I
 
 
 
+**Demo Video**:
+
+https://github.com/Anjal-shrestha/Restaurant-Receipt-Project/assets/24295752/4b294217-485f-47a7-9803-7e44a07e5776
+
+
 
 
 ## Features
