@@ -30,10 +30,14 @@ This project is a web application for a restaurant's order and receipt system. I
 
 
 **Order Page**:
-![image](https://github.com/Anjal-shrestha/Restaurant-Receipt-Project/assets/24295752/c8136892-87f8-46b5-9f4c-ebdfb9b63dd7)
+
+![image](https://github.com/Anjal-shrestha/Restaurant-Receipt-Project/assets/24295752/e054c498-fdd7-4c5e-896a-cb225c39b5ec)
+
 
 **Receipt Page**:
-![image](https://github.com/Anjal-shrestha/Restaurant-Receipt-Project/assets/24295752/a3f7d0b5-2075-4946-8daa-1ccdfa5cf8b0)
+
+![image](https://github.com/Anjal-shrestha/Restaurant-Receipt-Project/assets/24295752/35447633-91f9-4afb-9db7-6bf56b6d4b92)
+
 
 
 
