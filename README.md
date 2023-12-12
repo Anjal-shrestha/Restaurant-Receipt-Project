@@ -81,9 +81,10 @@ Contributions are welcome! Here's how you can contribute:
 ## Team Members
 
 
+
 <div style="display: flex; align-items: center; justify-content: center;">
     <div style="text-align: center; margin: 0 20px; background-color: #f9f9f9; padding: 20px; border-radius: 10px;">
-        <img src="https://scontent.fktm16-1.fna.fbcdn.net/v/t39.30808-6/276091571_1563789753995703_8729263376625454652_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=gGuUzAfqYugAX-MiDRY&_nc_ht=scontent.fktm16-1.fna&oh=00_AfDy22EMn8wUYVy7RVW81HnqglMimSQeVeKRoX3uMIdG2w&oe=64F2EFF8" alt="Anjal Shrestha" style="border-radius: 50%; width: 100px; height: 100px;">
+        <img src="https://github.com/Anjal-shrestha/Restaurant-Receipt-Project/assets/24295752/57e58bda-f6c3-42b7-91c5-4b3b417c4198" alt="Anjal Shrestha" style="border-radius: 50%; width: 100px; height: 100px;">
         <p><a href="https://github.com/Anjal-shrestha">Anjal Shrestha (GitHub)</a></p>
     </div>
     <div style="text-align: center; margin: 0 20px; background-color: #f9f9f9; padding: 20px; border-radius: 10px;">
