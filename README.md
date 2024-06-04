@@ -97,8 +97,6 @@ Contributions are welcome! Here's how you can contribute:
     </div>
     <div style="text-align: center; margin: 0 20px; background-color: #f9f9f9; padding: 20px; border-radius: 10px;">
         <img src="https://scontent.fktm16-1.fna.fbcdn.net/v/t1.6435-9/69465167_919145298462761_3049042371997073408_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=174925&_nc_ohc=dR0-ykYYZSEAX_gaaHJ&_nc_ht=scontent.fktm16-1.fna&oh=00_AfAFlkRDGf6jyLP0MjbupgZg7haMpxXAz59x8p3HUnbwfQ&oe=65164B0C" alt="Ajay Johnson" style="border-radius: 50%; width: 100px; height: 100px;">
-  
-    </div>
 </div>
 
 
